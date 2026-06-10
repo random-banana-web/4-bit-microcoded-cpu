@@ -1,0 +1,9 @@
+Originally, I had planned to build an 8-bit CPU. However, after studying the architecture, I decided to first implement a 4-bit design since it would cover the same core concepts while being easier to build and debug.
+
+The limited memory space (4 addresses × 4 bits) introduced several design challenges, particularly in instruction encoding and program storage. This constraint required simplifying the instruction set (I had to skip implementing the JMP instruction) and carefully allocating the available memory.
+
+My main purpose for doing this project was to learn computer architecture and understand how these mysterious and seemingly magical "CPUs" actually work, rather than maximizing computational capability.
+
+I tried to build as many components as possible by myself in order to truly understand how they worked. However, in some places I chose to use built-in Logisim components for simplicity and to keep the project manageable.
+
+One thing that surprised me was how much of CPU design is actually control logic. Building components such as registers, RAM, and the ALU was relatively straightforward compared to getting all of the control signals and instruction execution steps to work together correctly. This is where hours of debugging went.
